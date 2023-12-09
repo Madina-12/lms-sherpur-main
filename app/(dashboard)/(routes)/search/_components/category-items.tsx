@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils"
 import { usePathname, useRouter, useSearchParams } from "next/navigation"
 import queryString from "query-string"
 import { IconType } from "react-icons"
-import { FcClock, FcEngineering, FcFilmReel, FcOldTimeCamera, FcSalesPerformance, FcSportsMode } from "react-icons/fc";
+import { FcElectronics, FcClock, FcEngineering, FcFilmReel, FcOldTimeCamera, FcSalesPerformance, FcSportsMode } from "react-icons/fc";
 
 
 interface CategoryItemsProps {
@@ -15,6 +15,7 @@ interface CategoryItemsProps {
 }
 
 const iconMap = {
+    "Computer Science": FcElectronics,
     "Video": FcClock,
     "Photography": FcOldTimeCamera,
     "Fitness": FcSportsMode,
